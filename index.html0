@@ -1,0 +1,1253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Indian Leaked videos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0e0f12;
+      --panel: #17181c;
+      --panel-2: #1d1f24;
+      --text: #f2f3f5;
+      --muted: #a7acb7;
+      --brand: #ff2851;
+      --chip: #2a2c32;
+      --ring: rgba(255, 255, 255, .08);
+      --shadow: 0 10px 30px rgba(0, 0, 0, .35);
+      --radius: 14px;
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    html,
+    body {
+      height: 100%
+    }
+
+    body {
+      margin: 0;
+      background:
+        radial-gradient(1200px 600px at 10% -10%, rgba(255, 43, 79, .05), transparent),
+        radial-gradient(1200px 600px at 110% 110%, rgba(255, 43, 79, .06), transparent),
+        var(--bg);
+      color: var(--text);
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none
+    }
+
+    /* Header */
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 40;
+      background: #1a1a1a;
+      border-bottom: 1px solid var(--ring);
+    }
+
+    /* Navigation Tabs */
+    .nav-tabs {
+      display: flex;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .nav-tab {
+      flex: 1;
+      padding: 14px 16px;
+      text-align: center;
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: #aaa;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      border: none;
+      background: transparent;
+    }
+
+    .nav-tab:hover {
+      color: #fff;
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+    .nav-tab.active {
+      color: #fff;
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    /* Category Pills Row */
+    .category-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 16px;
+      overflow-x: auto;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+    }
+
+    .category-row::-webkit-scrollbar {
+      display: none;
+    }
+
+    .category-pill {
+      flex-shrink: 0;
+      padding: 10px 18px;
+      background: #2a2a2a;
+      border: none;
+      border-radius: 20px;
+      color: #fff;
+      font-size: 13px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      white-space: nowrap;
+    }
+
+    .category-pill:hover {
+      background: #3a3a3a;
+    }
+
+    .category-pill.active {
+      background: var(--brand);
+    }
+
+    .category-arrow {
+      flex-shrink: 0;
+      width: 36px;
+      height: 36px;
+      background: #2a2a2a;
+      border: none;
+      border-radius: 50%;
+      color: #fff;
+      font-size: 18px;
+      cursor: pointer;
+      display: grid;
+      place-items: center;
+      transition: all 0.2s ease;
+    }
+
+    .category-arrow:hover {
+      background: #3a3a3a;
+    }
+
+    /* Section Title */
+    .new-videos-title {
+      padding: 18px 16px 12px;
+      font-size: 18px;
+      font-weight: 800;
+      color: var(--brand);
+    }
+
+    .hamburger {
+      display: none;
+    }
+
+    .title {
+      font-weight: 800;
+      letter-spacing: .2px
+    }
+
+    /* Drawer (independent scroll) */
+    .overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, .65);
+      display: none;
+      z-index: 35
+    }
+
+    .drawer {
+      position: fixed;
+      inset: 0 auto 0 0;
+      width: 290px;
+      background: var(--panel);
+      border-right: 1px solid var(--ring);
+      box-shadow: var(--shadow);
+      transform: translateX(-100%);
+      transition: transform .25s ease;
+      z-index: 36;
+      padding: 18px;
+      height: 100vh;
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
+      overscroll-behavior: contain;
+    }
+
+    .drawer.open {
+      transform: none
+    }
+
+    .overlay.show {
+      display: block
+    }
+
+    .filter-h {
+      font-weight: 700;
+      margin: 12px 0 6px 0
+    }
+
+    .filter-group {
+      display: grid;
+      gap: 8px;
+      margin-bottom: 14px
+    }
+
+    .chip {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      padding: 10px 12px;
+      border-radius: 12px;
+      background: var(--panel-2);
+      border: 1px solid var(--ring);
+      cursor: pointer;
+      color: #fff;
+      /* <— text color (white) */
+    }
+
+    .chip[data-active="true"] {
+      outline: 2px solid rgba(255, 43, 79, .6);
+      color: var(--brand);
+      /* <— text color when active (red) */
+    }
+
+    .muted {
+      color: var(--muted)
+    }
+
+    .reset {
+      margin-top: 6px;
+      background: var(--panel-2);
+      border: 1px solid var(--ring);
+      padding: 10px 12px;
+      border-radius: 12px;
+      cursor: pointer
+    }
+
+    body.drawer-open {
+      position: fixed;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    /* Grid layout */
+    .wrap {
+      max-width: 1040px;
+      margin: 0 auto;
+      padding: 16px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+
+    @media (min-width: 700px) {
+      .grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (min-width: 1100px) {
+      .grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+    }
+
+    .card {
+      position: relative;
+      background: var(--panel);
+      border: 1px solid var(--ring);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow)
+    }
+
+    /* 16:9 media box */
+    .thumb {
+      position: relative;
+      aspect-ratio: 16 / 9;
+      background: #0b0e12;
+      overflow: hidden;
+    }
+
+    .thumb>img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border: 0;
+      display: block;
+      background: #000;
+    }
+
+    .play-btn {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 60px;
+      height: 60px;
+      background: rgba(0, 0, 0, 0.6);
+      border: 2px solid rgba(255, 255, 255, 0.3);
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      backdrop-filter: blur(4px);
+      transition: all 0.2s ease;
+      pointer-events: none;
+    }
+
+    .play-btn::after {
+      content: '';
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 10px 0 10px 18px;
+      border-color: transparent transparent transparent #fff;
+      margin-left: 4px;
+    }
+
+    .card:hover .play-btn {
+      background: var(--brand);
+      border-color: var(--brand);
+      transform: translate(-50%, -50%) scale(1.1);
+      box-shadow: 0 0 30px rgba(255, 40, 81, 0.5);
+    }
+
+    .like {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: rgba(0, 0, 0, .35);
+      border: 1px solid rgba(255, 255, 255, .15);
+      backdrop-filter: blur(4px);
+      cursor: pointer
+    }
+
+    .like[data-on="true"] {
+      background: rgba(255, 43, 79, .25)
+    }
+
+    /* Premium Badge */
+    .premium-badge {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: linear-gradient(135deg, #ff2851, #ff6b5b);
+      color: #fff;
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      padding: 6px 10px;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      box-shadow: 0 4px 12px rgba(255, 40, 81, 0.4);
+      z-index: 5;
+    }
+
+    .premium-badge::before {
+      content: '🔒';
+      font-size: 10px;
+    }
+
+    .duration {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      background: var(--panel-2);
+      border: 1px solid var(--ring);
+      padding: 6px 8px;
+      border-radius: 999px;
+      font-weight: 600;
+      font-size: 12px
+    }
+
+    .body {
+      padding: 12px 14px 14px
+    }
+
+    .title-line {
+      font-weight: 700;
+      line-height: 1.35;
+      margin: 0 0 8px 0
+    }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      color: var(--muted);
+      font-size: 12px
+    }
+
+    .pill {
+      background: var(--chip);
+      border: 1px solid var(--ring);
+      padding: 4px 8px;
+      border-radius: 999px;
+      font-weight: 600
+    }
+
+    /* Pay modal */
+    .modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, .65);
+      display: none;
+      z-index: 60
+    }
+
+    .modal {
+      position: fixed;
+      inset: 0;
+      display: none;
+      place-items: center;
+      z-index: 61
+    }
+
+    .modal>div {
+      width: min(540px, 92vw);
+      background: #fff;
+      color: #111;
+      padding: 22px;
+      border-radius: 18px;
+      box-shadow: var(--shadow)
+    }
+
+    .m-h {
+      font-weight: 800;
+      margin: 0 0 10px 0
+    }
+
+    .m-sub {
+      color: #5c5c5c;
+      margin: 4px 0 14px 0
+    }
+
+    .m-actions {
+      display: flex;
+      justify-content: flex-end;
+      gap: 10px;
+      margin-top: 8px
+    }
+
+    .btn {
+      appearance: none;
+      border: 0;
+      border-radius: 12px;
+      padding: 12px 16px;
+      font-weight: 800;
+      cursor: pointer
+    }
+
+    .btn.primary {
+      background: #ff3b30;
+      color: #fff
+    }
+
+    .btn.ghost {
+      background: #edf0f5;
+      color: #111
+    }
+
+    .footer {
+      max-width: 1040px;
+      margin: 28px auto;
+      padding: 10px 16px;
+      color: var(--muted);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 13px
+    }
+
+    /* Age Gate */
+    .age-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, .75);
+      display: none;
+      place-items: center;
+      z-index: 1000;
+      backdrop-filter: blur(6px);
+    }
+
+    .age-backdrop.show {
+      display: grid;
+    }
+
+    .age-modal {
+      width: min(520px, 92vw);
+      background: linear-gradient(180deg, #1b1d22, #14161a);
+      color: #fff;
+      border-radius: 18px;
+      box-shadow: var(--shadow);
+      border: 1px solid var(--ring);
+      padding: 18px;
+      text-align: center;
+      animation: pop .18s ease-out;
+    }
+
+    .age-title {
+      font-weight: 800;
+      font-size: 20px;
+      margin: 4px 0 8px;
+    }
+
+    .age-sub {
+      color: var(--muted);
+      margin: 0 0 14px;
+    }
+
+    .age-actions {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      margin-top: 8px;
+    }
+
+    .age-btn {
+      appearance: none;
+      border: 1px solid var(--ring);
+      border-radius: 12px;
+      padding: 12px 16px;
+      background: var(--panel-2);
+      color: #fff;
+      font-weight: 800;
+      cursor: pointer;
+    }
+
+    .age-btn.primary {
+      background: var(--brand);
+      border-color: transparent;
+    }
+
+    /* Section Header */
+    .section-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 20px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid var(--ring);
+    }
+
+    .section-title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 22px;
+      font-weight: 800;
+      letter-spacing: -0.3px;
+    }
+
+    .fire-icon {
+      font-size: 24px;
+      animation: pulse 1.5s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+
+      0%,
+      100% {
+        transform: scale(1);
+      }
+
+      50% {
+        transform: scale(1.15);
+      }
+    }
+
+    .section-badge {
+      background: linear-gradient(135deg, var(--brand), #ff6b5b);
+      color: #fff;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      box-shadow: 0 4px 12px rgba(255, 40, 81, 0.35);
+    }
+
+    /* Load More Button */
+    .load-more-wrapper {
+      display: flex;
+      justify-content: center;
+      margin-top: 28px;
+    }
+
+    .load-more-btn {
+      appearance: none;
+      border: 1px solid var(--ring);
+      background: var(--panel);
+      color: #fff;
+      font-size: 15px;
+      font-weight: 700;
+      padding: 14px 40px;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .load-more-btn:hover {
+      background: var(--panel-2);
+      border-color: var(--brand);
+      box-shadow: 0 4px 20px rgba(255, 40, 81, 0.25);
+    }
+
+    /* Loading + Subscription Overlay */
+    .video-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.85);
+      display: none;
+      place-items: center;
+      z-index: 55;
+      backdrop-filter: blur(8px);
+    }
+
+    .video-overlay.show {
+      display: grid;
+    }
+
+    .overlay-content {
+      text-align: center;
+      padding: 40px;
+      max-width: 400px;
+    }
+
+    /* Spinner */
+    .spinner {
+      width: 60px;
+      height: 60px;
+      border: 4px solid rgba(255, 255, 255, 0.1);
+      border-top-color: var(--brand);
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+      margin: 0 auto 20px;
+    }
+
+    @keyframes spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    .loading-text {
+      color: var(--muted);
+      font-size: 14px;
+      animation: fadeInOut 1.5s ease-in-out infinite;
+    }
+
+    @keyframes fadeInOut {
+
+      0%,
+      100% {
+        opacity: 0.5;
+      }
+
+      50% {
+        opacity: 1;
+      }
+    }
+
+    /* No Subscription Message */
+    .no-sub-message {
+      display: none;
+    }
+
+    .no-sub-message.show {
+      display: block;
+      animation: slideUp 0.4s ease-out;
+    }
+
+    @keyframes slideUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .no-sub-icon {
+      font-size: 64px;
+      margin-bottom: 16px;
+      animation: shake 0.5s ease-in-out;
+    }
+
+    @keyframes shake {
+
+      0%,
+      100% {
+        transform: translateX(0);
+      }
+
+      20% {
+        transform: translateX(-8px);
+      }
+
+      40% {
+        transform: translateX(8px);
+      }
+
+      60% {
+        transform: translateX(-5px);
+      }
+
+      80% {
+        transform: translateX(5px);
+      }
+    }
+
+    .no-sub-title {
+      font-size: 22px;
+      font-weight: 800;
+      color: #fff;
+      margin: 0 0 10px 0;
+    }
+
+    .no-sub-desc {
+      color: var(--muted);
+      font-size: 14px;
+      margin: 0 0 24px 0;
+      line-height: 1.5;
+    }
+
+    .unlock-btn {
+      appearance: none;
+      border: none;
+      background: linear-gradient(135deg, var(--brand), #ff6b5b);
+      color: #fff;
+      font-size: 22px;
+      font-weight: 800;
+      padding: 20px 50px;
+      border-radius: 16px;
+      cursor: pointer;
+      box-shadow: 0 8px 24px rgba(255, 40, 81, 0.4);
+      transition: all 0.2s ease;
+    }
+
+    .unlock-btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 12px 32px rgba(255, 40, 81, 0.5);
+    }
+
+    .unlock-price {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      font-size: 16px;
+      font-weight: 600;
+      margin-top: 8px;
+    }
+
+    .original-price {
+      text-decoration: line-through;
+      color: rgba(255, 255, 255, 0.5);
+      font-size: 18px;
+    }
+
+    .offer-price {
+      color: #4ade80;
+      font-size: 22px;
+      font-weight: 800;
+    }
+
+    .offer-badge {
+      background: #4ade80;
+      color: #000;
+      font-size: 11px;
+      font-weight: 800;
+      padding: 4px 8px;
+      border-radius: 4px;
+      margin-left: 6px;
+    }
+
+    /* Countdown Timer */
+    .countdown-wrapper {
+      margin-top: 20px;
+      padding: 12px 20px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    .countdown-label {
+      font-size: 13px;
+      color: var(--muted);
+      margin-bottom: 6px;
+    }
+
+    .countdown-timer {
+      font-size: 28px;
+      font-weight: 800;
+      color: #fff;
+      font-family: 'Courier New', monospace;
+      animation: pulse-timer 1s ease-in-out infinite;
+    }
+
+    @keyframes pulse-timer {
+
+      0%,
+      100% {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: 0.7;
+      }
+    }
+
+    .countdown-urgent {
+      color: var(--brand);
+    }
+
+    .skip-text {
+      margin-top: 16px;
+      color: var(--muted);
+      font-size: 12px;
+      cursor: pointer;
+      transition: color 0.2s;
+    }
+
+    .skip-text:hover {
+      color: #fff;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Age Verification Popup -->
+  <div class="age-backdrop" id="ageBackdrop" role="dialog" aria-modal="true" aria-labelledby="ageTitle"
+    aria-hidden="true">
+    <div class="age-modal">
+      <h3 class="age-title" id="ageTitle">Are you 18 years old or more?</h3>
+      <p class="age-sub">You must be 18+ to view this content.</p>
+      <div class="age-actions">
+        <button class="age-btn" id="btnAgeNo">No</button>
+        <button class="age-btn primary" id="btnAgeYes">Yes</button>
+      </div>
+    </div>
+  </div>
+
+  <header class="topbar" aria-label="Site header">
+    <!-- Navigation Tabs -->
+    <nav class="nav-tabs">
+      <button class="nav-tab active">TOP RATED</button>
+      <button class="nav-tab">CATEGORIES</button>
+      <button class="nav-tab">AI PORN VIDEO</button>
+    </nav>
+
+    <!-- Category Pills -->
+    <div class="category-row">
+      <button class="category-pill">new sex mms</button>
+      <button class="category-pill">desi hardcore sex</button>
+      <button class="category-pill">college girl</button>
+      <button class="category-pill">bhabhi</button>
+      <button class="category-pill">indian couple</button>
+      <button class="category-pill">viral mms</button>
+      <button class="category-arrow">›</button>
+    </div>
+
+    <!-- New Videos Title -->
+    <div class="new-videos-title">New Videos</div>
+  </header>
+
+  <div class="overlay" id="overlay"></div>
+  <aside class="drawer" id="filterDrawer" aria-label="Filters" aria-hidden="true">
+    <div class="filter-h">Filter by quality</div>
+    <div class="filter-group" id="qualityGroup"></div>
+
+    <div class="filter-h">By uploader</div>
+    <div class="filter-group" id="uploaderGroup"></div>
+
+    <button class="reset" id="resetFilters">Reset filters</button>
+    <div class="muted" style="margin-top:10px">Press <b>Esc</b> to close the drawer.</div>
+  </aside>
+
+  <main class="wrap">
+    <section class="grid" id="grid" aria-label="Videos grid"></section>
+
+    <div class="load-more-wrapper">
+      <button class="load-more-btn" id="loadMoreBtn">Load More</button>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div>© 2025 — All rights reserved.</div>
+    <nav style="display:flex;gap:14px"><a href="#">Terms</a><a href="#">Privacy</a><a href="#">Contact</a></nav>
+  </footer>
+
+  <!-- Video Loading + No Subscription Overlay -->
+  <div class="video-overlay" id="videoOverlay">
+    <div class="overlay-content">
+      <!-- Loading State -->
+      <div id="loadingState">
+        <div class="spinner"></div>
+        <p class="loading-text">Loading video...</p>
+      </div>
+
+      <!-- No Subscription Message -->
+      <div class="no-sub-message" id="noSubMessage">
+        <div class="no-sub-icon">🔒</div>
+        <h2 class="no-sub-title">You don't have a subscription</h2>
+        <p class="no-sub-desc">Unlock all premium content with a one-time payment</p>
+        <button class="unlock-btn" id="unlockBtn">
+          Unlock Now
+          <span class="unlock-price">
+            <span class="original-price">₹200</span>
+            <span class="offer-price">₹1</span>
+            <span class="offer-badge">99% OFF</span>
+          </span>
+        </button>
+        <div class="countdown-wrapper">
+          <div class="countdown-label">Offer expires in</div>
+          <div class="countdown-timer" id="countdownTimer">5:00</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pay ₹1 modal -->
+  <div class="modal-backdrop" id="modalBackdrop" role="presentation"></div>
+  <div class="modal" id="payModal" role="dialog" aria-modal="true" aria-labelledby="mH">
+    <div>
+      <h3 class="m-h" id="mH">Pay ₹1 to continue</h3>
+      <div class="m-sub">Unlock All for just ₹1</div>
+      <div class="muted">Quick Payment</div>
+      <div class="m-actions">
+        <button class="btn ghost" id="cancelPay">Cancel</button>
+        <button class="btn primary" id="doPay">Pay Now • ₹1</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    /* ---------- Access flag ---------- */
+    function hasAccess() { return localStorage.getItem('unlockAll') === '1'; }
+
+    /* ---------- Lightweight flow state (unchanged handoff) ---------- */
+    const Flow = {
+      get() { try { return JSON.parse(sessionStorage.getItem('payflow') || '{}') } catch { return {} } },
+      set(obj) { sessionStorage.setItem('payflow', JSON.stringify(obj)); },
+      up(patch) { this.set({ ...this.get(), ...patch }); },
+      clear() { sessionStorage.removeItem('payflow'); }
+    };
+
+    /* ---------- Data ---------- */
+
+
+    const VIDEOS = [
+      { id: 'v1', title: 'Payalgaming leaked MMS', quality: 'HD', by: 'PornMaster01', views: '12.3k', dur: '1:31', img: 'thumb1.png' },
+      { id: 'v2', title: 'Most Avaited Session 2 video', quality: '1080p', by: 'expert69', views: '1.1k', dur: '56:31', img: 'thumb2.png' },
+      { id: 'v3', title: 'Shubhashree Sahoo’s Insta Slut Sex Video Leaked! 💦 Exclusive Fuck Fest!', quality: 'HD', by: 'HornyMF', views: '5.6k', dur: '06:45', img: 'thumb3.png' },
+      { id: 'v4', title: 'sexy newly married Bhabh', quality: '4K', by: 'PornMaster01', views: '742', dur: '08:13', img: 'thumb4.png' },
+    ];
+
+    const QUALITIES = ['All', '4K', '1080p', 'HD', '720p'];
+    const UPLOADERS = ['Anyone', 'PornMaster01', 'expert69', 'HornyMF', 'Shadowxoxo', 'joyin69', 'BigDickGUy', 'Sluttyvids', 'HollyVids', 'HookedIn'];
+
+    /* ---------- Build filters ---------- */
+    const qG = document.getElementById('qualityGroup');
+    const uG = document.getElementById('uploaderGroup');
+    let state = { q: 'All', u: 'Anyone' };
+
+    function chip(label, group, key) {
+      const el = document.createElement('button');
+      el.className = 'chip';
+      el.setAttribute('type', 'button');
+      el.dataset.value = label;
+      el.textContent = label;
+      el.addEventListener('click', () => {
+        state[key] = label;
+        [...group.children].forEach(c => c.dataset.active = (c.dataset.value === label));
+        renderGrid();
+      });
+      return el;
+    }
+
+    QUALITIES.forEach((q, i) => { const c = chip(q, qG, 'q'); if (i === 0) c.dataset.active = true; qG.appendChild(c); });
+    UPLOADERS.forEach((u, i) => { const c = chip(u, uG, 'u'); if (i === 0) c.dataset.active = true; uG.appendChild(c); });
+
+    document.getElementById('resetFilters').addEventListener('click', () => {
+      state = { q: 'All', u: 'Anyone' };
+      [...qG.children].forEach((c, i) => c.dataset.active = i === 0);
+      [...uG.children].forEach((c, i) => c.dataset.active = i === 0);
+      renderGrid();
+    });
+
+    /* ---------- Drawer toggling ---------- */
+    const drawerEl = document.getElementById('filterDrawer');
+    const drawerOverlayEl = document.getElementById('overlay');
+    const btnDrawerEl = document.getElementById('btnDrawer');
+
+    function openDrawer() {
+      drawerEl.classList.add('open');
+      drawerOverlayEl.classList.add('show');
+      if (btnDrawerEl) btnDrawerEl.setAttribute('aria-expanded', 'true');
+      drawerEl.setAttribute('aria-hidden', 'false');
+      document.body.classList.add('drawer-open');
+    }
+    function closeDrawer() {
+      drawerEl.classList.remove('open');
+      drawerOverlayEl.classList.remove('show');
+      if (btnDrawerEl) btnDrawerEl.setAttribute('aria-expanded', 'false');
+      drawerEl.setAttribute('aria-hidden', 'true');
+      document.body.classList.remove('drawer-open');
+    }
+    if (btnDrawerEl) {
+      btnDrawerEl.addEventListener('click', () => {
+        drawerEl.classList.contains('open') ? closeDrawer() : openDrawer();
+      });
+    }
+    drawerOverlayEl.addEventListener('click', closeDrawer);
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && drawerEl.classList.contains('open')) closeDrawer();
+    });
+
+    /* ---------- Grid rendering ---------- */
+    const grid = document.getElementById('grid');
+
+    function cardTemplate(v) {
+      const unlocked = hasAccess();
+      const el = document.createElement('article');
+      el.className = 'card';
+      el.setAttribute('tabindex', '0');
+      el.setAttribute('role', 'button');
+      el.dataset.quality = v.quality;
+      el.dataset.by = v.by;
+
+      el.innerHTML = `
+        <div class="thumb">
+          <img src="${v.img}" alt="${v.title}" loading="lazy">
+          <div class="play-btn"></div>
+          ${!unlocked ? '<div class="premium-badge">Premium</div>' : ''}
+        </div>
+        <button class="like" aria-label="Toggle favorite" title="Favorite" type="button">❤</button>
+        <div class="duration">${v.dur}</div>
+        <div class="body">
+          <h3 class="title-line">${v.title}</h3>
+          <div class="meta">
+            <span class="pill">${v.quality}</span>
+            <span>• ${v.by}</span>
+            <span>• ${v.views} views</span>
+          </div>
+        </div>`;
+
+      if (!unlocked) {
+        // Start the loading flow when clicking the card (except the like button)
+        const startVideoFlow = () => showVideoOverlay(v.id);
+        el.addEventListener('click', (e) => {
+          const t = e.target;
+          if (t instanceof Element && t.closest('.like')) return;
+          startVideoFlow();
+        });
+        el.addEventListener('keydown', (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); startVideoFlow(); } });
+      }
+
+      // Like toggle
+      el.querySelector('.like').addEventListener('click', (e) => {
+        e.stopPropagation();
+        const b = e.currentTarget;
+        if (b instanceof HTMLElement) b.dataset.on = b.dataset.on !== "true";
+      });
+
+      return el;
+    }
+
+    function renderGrid() {
+      grid.innerHTML = '';
+      VIDEOS
+        .filter(v => (state.q === 'All' || v.quality === state.q) && (state.u === 'Anyone' || v.by === state.u))
+        .forEach(v => grid.appendChild(cardTemplate(v)));
+    }
+
+    /* ---------- Video Overlay Flow ---------- */
+    let pendingVideoId = null;
+    let countdownInterval = null;
+    let countdownSeconds = 300; // 5 minutes
+    const videoOverlay = document.getElementById('videoOverlay');
+    const loadingState = document.getElementById('loadingState');
+    const noSubMessage = document.getElementById('noSubMessage');
+    const unlockBtn = document.getElementById('unlockBtn');
+    const countdownTimer = document.getElementById('countdownTimer');
+
+    function updateCountdown() {
+      const minutes = Math.floor(countdownSeconds / 60);
+      const seconds = countdownSeconds % 60;
+      countdownTimer.textContent = `${minutes}:${seconds.toString().padStart(2, '0')}`;
+
+      // Add urgent class when under 1 minute
+      if (countdownSeconds < 60) {
+        countdownTimer.classList.add('countdown-urgent');
+      }
+
+      if (countdownSeconds > 0) {
+        countdownSeconds--;
+      } else {
+        clearInterval(countdownInterval);
+        countdownTimer.textContent = "EXPIRED";
+      }
+    }
+
+    function startCountdown() {
+      countdownSeconds = 300; // Reset to 5 minutes
+      countdownTimer.classList.remove('countdown-urgent');
+      updateCountdown();
+      countdownInterval = setInterval(updateCountdown, 1000);
+    }
+
+    function stopCountdown() {
+      if (countdownInterval) {
+        clearInterval(countdownInterval);
+        countdownInterval = null;
+      }
+    }
+
+    function showVideoOverlay(videoId) {
+      if (hasAccess()) return;
+      pendingVideoId = videoId;
+
+      // Reset states
+      loadingState.style.display = 'block';
+      noSubMessage.classList.remove('show');
+
+      // Show overlay
+      videoOverlay.classList.add('show');
+      document.body.style.overflow = 'hidden';
+
+      // After loading animation, show subscription message and start countdown
+      setTimeout(() => {
+        loadingState.style.display = 'none';
+        noSubMessage.classList.add('show');
+        startCountdown();
+      }, 1500);
+    }
+
+    function hideVideoOverlay() {
+      videoOverlay.classList.remove('show');
+      document.body.style.overflow = '';
+      loadingState.style.display = 'block';
+      noSubMessage.classList.remove('show');
+      stopCountdown();
+    }
+
+    // Unlock button - triggers payment flow
+    unlockBtn.addEventListener('click', () => {
+      hideVideoOverlay();
+      // Use existing payment flow
+      const txId = 'TX' + Math.random().toString(36).slice(2, 10).toUpperCase();
+      Flow.set({
+        planType: 'unlock_all',
+        amount: '1.00',
+        currency: 'INR',
+        offerCopy: 'Unlock All for just ₹1',
+        clickedVideoId: pendingVideoId,
+        txId,
+        sourcePage: 'ashdevpanels',
+        createdAt: Date.now()
+      });
+      window.location.href = 'method.html';
+    });
+
+    // Close on escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && videoOverlay.classList.contains('show')) {
+        hideVideoOverlay();
+      }
+    });
+
+    /* ---------- Modal gating ---------- */
+    const modal = document.getElementById('payModal');
+    const backdrop = document.getElementById('modalBackdrop');
+    const cancelPay = document.getElementById('cancelPay');
+    const doPay = document.getElementById('doPay');
+
+    function showModal(videoId) {
+      if (hasAccess()) return;
+      pendingVideoId = videoId; modal.style.display = 'grid'; backdrop.style.display = 'block';
+    }
+    function hideModal() { modal.style.display = 'none'; backdrop.style.display = 'none'; pendingVideoId = null; }
+
+    cancelPay.addEventListener('click', hideModal);
+    backdrop.addEventListener('click', hideModal);
+
+    doPay.addEventListener('click', () => {
+      // keep your existing flow: DO NOT set unlockAll here
+      const txId = 'TX' + Math.random().toString(36).slice(2, 10).toUpperCase();
+      Flow.set({
+        planType: 'unlock_all',
+        amount: '1.00',
+        currency: 'INR',
+        offerCopy: 'Unlock All for just ₹1',
+        clickedVideoId: pendingVideoId,
+        txId,
+        sourcePage: 'ashdevpanels',
+        createdAt: Date.now()
+      });
+      // Your method.html should set: localStorage.setItem('unlockAll','1'); then redirect back to index.html
+      window.location.href = 'method.html';
+    });
+
+    // If already unlocked, hide pay modal elements
+    if (hasAccess()) {
+      document.getElementById('payModal')?.setAttribute('hidden', 'true');
+      document.getElementById('modalBackdrop')?.setAttribute('hidden', 'true');
+    }
+
+    /* ---------- Age Gate logic ---------- */
+    const ageBackdrop = document.getElementById('ageBackdrop');
+    const btnAgeYes = document.getElementById('btnAgeYes');
+    const btnAgeNo = document.getElementById('btnAgeNo');
+
+    function showAgeGate() {
+      ageBackdrop.classList.add('show');
+      ageBackdrop.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+    }
+    function hideAgeGate() {
+      ageBackdrop.classList.remove('show');
+      ageBackdrop.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+    }
+    if (localStorage.getItem('ageVerified') !== 'true') showAgeGate();
+    btnAgeYes?.addEventListener('click', () => { localStorage.setItem('ageVerified', 'true'); hideAgeGate(); });
+    btnAgeNo?.addEventListener('click', () => { window.location.href = 'https://www.google.com/'; });
+
+    /* ---------- Initial paint ---------- */
+    renderGrid();
+  </script>
+</body>
+
+</html>
